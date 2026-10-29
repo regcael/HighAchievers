@@ -14,8 +14,8 @@
   <style>
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #f4f3ef;
-      color: #0f172a;
+      background-color: #FAFAFA;
+      color: #18181b;
       user-select: none;
       -webkit-user-select: none;
       overflow-x: hidden;
@@ -30,7 +30,7 @@
       height: 200%;
       pointer-events: none;
       z-index: 40;
-      background-image: url("data:image/svg+xml,%3Csvg width='420' height='240' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='rotate(-24 210 120)'%3E%3Ctext x='50%25' y='42%25' dominant-baseline='middle' text-anchor='middle' fill='%230f172a' fill-opacity='0.055' font-family='Georgia, serif' font-weight='bold' font-size='20' letter-spacing='4'%3EREGINA CAELI • EXECUTIVE SUITE%3C/text%3E%3Ctext x='50%25' y='60%25' dominant-baseline='middle' text-anchor='middle' fill='%230f172a' fill-opacity='0.045' font-family='sans-serif' font-weight='700' font-size='12' letter-spacing='3'%3ESECURE AUTHORIZED INSTANCE%3C/text%3E%3C/g%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg width='420' height='240' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='rotate(-24 210 120)'%3E%3Ctext x='50%25' y='42%25' dominant-baseline='middle' text-anchor='middle' fill='%2318181b' fill-opacity='0.03' font-family='Georgia, serif' font-weight='bold' font-size='20' letter-spacing='4'%3EREGINA CAELI • EXECUTIVE SUITE%3C/text%3E%3Ctext x='50%25' y='60%25' dominant-baseline='middle' text-anchor='middle' fill='%2318181b' fill-opacity='0.02' font-family='sans-serif' font-weight='700' font-size='12' letter-spacing='3'%3ESECURE AUTHORIZED INSTANCE%3C/text%3E%3C/g%3E%3C/svg%3E");
       background-repeat: repeat;
     }
   </style>
@@ -39,74 +39,75 @@
 
   <div class="rc-watermark-layer" id="watermarkLayer"></div>
 
-  <div id="securityToast" class="fixed bottom-5 right-5 z-50 hidden bg-slate-900 text-amber-300 px-5 py-3.5 rounded-2xl shadow-2xl border border-amber-400/50 text-xs font-bold flex items-center gap-3">
+  <div id="securityToast" class="fixed bottom-5 right-5 z-50 hidden bg-zinc-900 text-white px-5 py-3.5 rounded-2xl shadow-2xl border border-zinc-700 text-xs font-bold flex items-center gap-3">
     <span class="text-base">🛡️</span>
     <span id="securityToastMsg">Protected by Regina Caeli Security Protocol.</span>
   </div>
 
-  <div class="sticky top-0 z-50 bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 text-slate-950 border-b-2 border-slate-900 shadow-xl">
+  <!-- ULTRA PREMIUM DARK BANNER -->
+  <div class="sticky top-0 z-50 bg-zinc-900 text-zinc-50 border-b border-zinc-800 shadow-lg">
     <div class="max-w-5xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
       <div class="flex items-center gap-3.5">
-        <div class="w-12 h-12 rounded-2xl bg-slate-950 border-2 border-amber-200 flex items-center justify-center overflow-hidden shrink-0 shadow-md">
+        <div class="w-12 h-12 rounded-2xl bg-zinc-950 border border-zinc-700 flex items-center justify-center overflow-hidden shrink-0 shadow-inner">
           <img id="bannerLogoImg" src="" alt="Regina Caeli Crown" class="w-full h-full object-cover hidden">
-          <span id="bannerLogoFallback" class="text-amber-300 font-serif-brand font-bold text-lg">RC</span>
+          <span id="bannerLogoFallback" class="text-white font-serif-brand font-bold text-lg">RC</span>
         </div>
-        <p id="topBannerCopy" class="leading-snug text-sm md:text-base font-bold text-slate-950">
+        <p id="topBannerCopy" class="leading-snug text-sm md:text-base font-bold text-white">
           <!-- Populated by JS -->
         </p>
       </div>
       <a id="topBookCta" href="https://regcael.github.io/signboard/" target="_blank" rel="noopener noreferrer"
-         class="shrink-0 bg-slate-950 hover:bg-slate-900 text-amber-300 font-extrabold text-xs md:text-sm px-6 py-3 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+         class="shrink-0 bg-white hover:bg-zinc-200 text-zinc-900 font-extrabold text-xs md:text-sm px-6 py-3 rounded-xl shadow transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
         <span id="topBookCtaText">✨ Explore Role Boosters • Fixed Scope</span>
       </a>
     </div>
   </div>
 
-  <div id="licenseGateModal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-md w-full p-8 shadow-2xl border border-slate-200 text-center relative overflow-hidden">
-      <div class="w-20 h-20 mx-auto mb-4 rounded-2xl bg-slate-900 border-2 border-amber-400 flex items-center justify-center shadow-xl overflow-hidden">
+  <div id="licenseGateModal" class="fixed inset-0 z-50 bg-zinc-950/90 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-8 shadow-2xl border border-zinc-200 text-center relative overflow-hidden">
+      <div class="w-20 h-20 mx-auto mb-4 rounded-2xl bg-zinc-900 border border-zinc-700 flex items-center justify-center shadow-xl overflow-hidden">
         <img id="gateLogoImg" src="" alt="Regina Caeli Logo" class="w-full h-full object-cover hidden">
-        <svg id="gateLogoFallback" class="w-10 h-10 text-amber-400" viewBox="0 0 24 24" fill="currentColor">
+        <svg id="gateLogoFallback" class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
           <path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/>
         </svg>
       </div>
-      <p class="text-[11px] font-extrabold uppercase tracking-widest text-amber-700 mb-1">Regina Caeli • Executive Suite</p>
-      <h2 class="text-2xl font-extrabold text-slate-900 mb-2">Authorized Access Gate</h2>
-      <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+      <p class="text-[11px] font-extrabold uppercase tracking-widest text-zinc-500 mb-1">Regina Caeli • Executive Suite</p>
+      <h2 class="text-2xl font-extrabold text-zinc-900 mb-2">Authorized Access Gate</h2>
+      <p class="text-xs text-zinc-600 mb-4 leading-relaxed">
         Enter your authorized Client Activation PIN below to bind and unlock this secure suite to your current hardware device.
       </p>
 
-      <div class="bg-slate-50 rounded-2xl p-4 mb-4 border border-slate-200 text-left text-xs space-y-2">
+      <div class="bg-zinc-50 rounded-2xl p-4 mb-4 border border-zinc-200 text-left text-xs space-y-2">
         <div class="flex justify-between">
-          <span class="text-slate-500">System Issuer:</span>
-          <span class="font-bold text-slate-900">Regina Caeli Official</span>
+          <span class="text-zinc-500">System Issuer:</span>
+          <span class="font-bold text-zinc-900">Regina Caeli Official</span>
         </div>
         <div class="flex justify-between">
-          <span class="text-slate-500">Hardware Signature:</span>
-          <span id="specFingerprint" class="font-mono text-emerald-700 font-semibold">Generating...</span>
+          <span class="text-zinc-500">Hardware Signature:</span>
+          <span id="specFingerprint" class="font-mono text-blue-600 font-semibold">Generating...</span>
         </div>
         <div class="flex justify-between">
-          <span class="text-slate-500">License Type:</span>
-          <span class="font-bold text-indigo-700">Strict Cloud 1-Device Bound</span>
+          <span class="text-zinc-500">License Type:</span>
+          <span class="font-bold text-blue-600">Strict Cloud 1-Device Bound</span>
         </div>
       </div>
 
       <div class="mb-5 text-left">
-        <label class="block text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mb-1.5">
+        <label class="block text-[11px] font-extrabold uppercase tracking-wider text-zinc-600 mb-1.5">
           🔑 Enter Activation PIN
         </label>
         <input id="clientPinEntry" type="text" placeholder="ENTER YOUR PIN"
-               class="w-full border-2 border-slate-300 focus:border-slate-900 rounded-xl px-4 py-3 text-center font-mono font-bold text-base tracking-widest uppercase text-slate-900 focus:outline-none">
-        <p id="pinErrorMsg" class="text-[11px] text-rose-600 font-bold mt-2 hidden">
+               class="w-full border-2 border-zinc-300 focus:border-blue-600 rounded-xl px-4 py-3 text-center font-mono font-bold text-base tracking-widest uppercase text-zinc-900 focus:outline-none transition">
+        <p id="pinErrorMsg" class="text-[11px] text-red-600 font-bold mt-2 hidden">
           ❌ Incorrect PIN or device mismatch.
         </p>
       </div>
 
       <button id="activateLicenseBtn" onclick="activateDeviceLicense()"
-              class="w-full bg-slate-900 hover:bg-slate-800 text-amber-300 font-bold py-4 px-6 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
         <span>🔐 Verify & Bind to Device via Cloud</span>
       </button>
-      <p class="text-[11px] text-slate-400 mt-3">
+      <p class="text-[11px] text-zinc-400 mt-3">
         Protected by Regina Caeli Cloud Security Protocols.
       </p>
     </div>
@@ -115,144 +116,145 @@
   <main class="max-w-3xl mx-auto w-full px-4 pt-6 pb-14 relative z-10">
 
     <div class="mb-3 px-2">
-      <span class="text-xl font-extrabold text-slate-800">Hi <span id="clientGreetingName">High Achiever</span> 👋</span>
+      <span class="text-xl font-extrabold text-zinc-800">Hi <span id="clientGreetingName">High Achiever</span> 👋</span>
     </div>
 
-    <header class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/90 mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+    <header class="bg-white rounded-3xl p-6 shadow-sm border border-zinc-200 mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
       <div class="flex items-center gap-4">
-        <div class="w-14 h-14 rounded-2xl bg-slate-900 border-2 border-amber-400 flex items-center justify-center shrink-0 shadow-md overflow-hidden">
+        <div class="w-14 h-14 rounded-2xl bg-zinc-900 border border-zinc-800 flex items-center justify-center shrink-0 shadow-md overflow-hidden">
           <img id="headerLogoImg" src="" alt="Regina Caeli Logo" class="w-full h-full object-cover hidden">
-          <svg id="headerLogoFallback" class="w-7 h-7 text-amber-400" viewBox="0 0 24 24" fill="currentColor">
+          <svg id="headerLogoFallback" class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
             <path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/>
           </svg>
         </div>
         <div>
           <div class="flex flex-wrap items-center gap-2">
-            <span class="text-[10px] font-extrabold uppercase tracking-widest bg-amber-100 text-amber-900 px-2.5 py-0.5 rounded-full border border-amber-300">
+            <span class="text-[10px] font-extrabold uppercase tracking-widest bg-zinc-100 text-zinc-800 px-2.5 py-0.5 rounded-full border border-zinc-200">
               Regina Caeli • Official Suite
             </span>
-            <span class="text-[10px] font-bold bg-emerald-50 text-emerald-700 px-2.5 py-0.5 rounded-full border border-emerald-200">
-              🔒 Cloud Secured Instance
+            <span class="text-[10px] font-bold bg-blue-50 text-blue-700 px-2.5 py-0.5 rounded-full border border-blue-200">
+              🔒 Cloud Secured
             </span>
           </div>
-          <h1 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">
-            Executive Suite <span class="font-serif-brand italic font-normal text-slate-600 text-lg">Daily Focus</span>
+          <h1 class="text-xl sm:text-2xl font-extrabold text-zinc-900 mt-1">
+            Executive Suite <span class="font-serif-brand italic font-normal text-zinc-500 text-lg">Daily Focus</span>
           </h1>
-          <p class="text-xs text-slate-500 mt-0.5">Executive 90-Second Reset</p>
+          <p class="text-xs text-zinc-500 mt-0.5">Executive 90-Second Reset</p>
         </div>
       </div>
 
       <div class="flex items-center gap-2.5 self-end sm:self-center">
-        <div class="bg-slate-100 px-3.5 py-2.5 rounded-2xl text-center border border-slate-200">
-          <p class="text-[10px] uppercase font-bold text-slate-400">Momentum XP</p>
-          <p id="xpDisplay" class="text-sm font-extrabold text-slate-900">0 XP</p>
+        <div class="bg-zinc-50 px-3.5 py-2.5 rounded-2xl text-center border border-zinc-200">
+          <p class="text-[10px] uppercase font-bold text-zinc-500">Momentum XP</p>
+          <p id="xpDisplay" class="text-sm font-extrabold text-zinc-900">0 XP</p>
         </div>
-        <button onclick="logWaterSip()" class="bg-sky-50 hover:bg-sky-100 active:scale-95 text-sky-800 border border-sky-200 px-3.5 py-2.5 rounded-2xl text-xs font-bold transition flex flex-col items-center">
+        <button onclick="logWaterSip()" class="bg-white hover:bg-blue-50 active:scale-95 text-blue-700 border border-blue-200 px-3.5 py-2.5 rounded-2xl text-xs font-bold transition flex flex-col items-center shadow-sm">
           <span>💧 Sip Water</span>
-          <span id="waterCountDisplay" class="text-[10px] text-sky-600 font-semibold">0 sips (+10 XP)</span>
+          <span id="waterCountDisplay" class="text-[10px] text-blue-500 font-semibold">0 sips (+10 XP)</span>
         </button>
       </div>
     </header>
 
-    <section class="bg-gradient-to-br from-emerald-900 via-teal-900 to-slate-900 text-white rounded-3xl p-6 shadow-md mb-6 border border-emerald-700/40">
+    <!-- BOUNTY SECTION: Now a sleek midnight contrast block -->
+    <section class="bg-zinc-900 text-white rounded-3xl p-6 shadow-md mb-6 border border-zinc-800">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
         <div>
-          <span class="text-[10px] uppercase tracking-widest font-bold bg-emerald-400/20 text-emerald-200 px-2.5 py-1 rounded-full">
+          <span class="text-[10px] uppercase tracking-widest font-bold bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded-full border border-zinc-700">
             Instant Activation Bypass • 90 Seconds
           </span>
           <h2 class="text-lg sm:text-xl font-bold mt-2">The "3-Item Line-of-Sight" Bounty</h2>
-          <p class="text-xs text-emerald-100/80 mt-0.5">
+          <p class="text-xs text-zinc-400 mt-0.5">
             Don't clean the whole room. Touch and put away just <strong>3 items</strong> in your immediate line of sight, then stop.
           </p>
         </div>
-        <button id="bountyTimerBtn" onclick="toggleBountyTimer()" class="shrink-0 bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-xs px-4 py-3 rounded-xl shadow transition">
+        <button id="bountyTimerBtn" onclick="toggleBountyTimer()" class="shrink-0 bg-white hover:bg-zinc-200 text-zinc-900 font-extrabold text-xs px-4 py-3 rounded-xl shadow transition">
           ⏱️ Start 90s Timer
         </button>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-        <button onclick="toggleBountySlot(0)" id="bountySlot0" class="bounty-slot bg-white/10 hover:bg-white/15 border border-white/15 rounded-xl p-3 text-left flex items-center gap-2.5 transition">
-          <span id="bountyCheck0" class="w-5 h-5 rounded-md border border-emerald-300 flex items-center justify-center text-xs"></span>
-          <span class="text-xs font-semibold">1st Item Put Away</span>
+        <button onclick="toggleBountySlot(0)" id="bountySlot0" class="bounty-slot bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 rounded-xl p-3 text-left flex items-center gap-2.5 transition">
+          <span id="bountyCheck0" class="w-5 h-5 rounded-md border border-zinc-500 flex items-center justify-center text-xs"></span>
+          <span class="text-xs font-semibold text-zinc-200">1st Item Put Away</span>
         </button>
-        <button onclick="toggleBountySlot(1)" id="bountySlot1" class="bounty-slot bg-white/10 hover:bg-white/15 border border-white/15 rounded-xl p-3 text-left flex items-center gap-2.5 transition">
-          <span id="bountyCheck1" class="w-5 h-5 rounded-md border border-emerald-300 flex items-center justify-center text-xs"></span>
-          <span class="text-xs font-semibold">2nd Item Put Away</span>
+        <button onclick="toggleBountySlot(1)" id="bountySlot1" class="bounty-slot bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 rounded-xl p-3 text-left flex items-center gap-2.5 transition">
+          <span id="bountyCheck1" class="w-5 h-5 rounded-md border border-zinc-500 flex items-center justify-center text-xs"></span>
+          <span class="text-xs font-semibold text-zinc-200">2nd Item Put Away</span>
         </button>
-        <button onclick="toggleBountySlot(2)" id="bountySlot2" class="bounty-slot bg-white/10 hover:bg-white/15 border border-white/15 rounded-xl p-3 text-left flex items-center gap-2.5 transition">
-          <span id="bountyCheck2" class="w-5 h-5 rounded-md border border-emerald-300 flex items-center justify-center text-xs"></span>
-          <span class="text-xs font-semibold">3rd Item Put Away</span>
+        <button onclick="toggleBountySlot(2)" id="bountySlot2" class="bounty-slot bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 rounded-xl p-3 text-left flex items-center gap-2.5 transition">
+          <span id="bountyCheck2" class="w-5 h-5 rounded-md border border-zinc-500 flex items-center justify-center text-xs"></span>
+          <span class="text-xs font-semibold text-zinc-200">3rd Item Put Away</span>
         </button>
       </div>
     </section>
 
     <section class="mb-6">
       <div class="flex items-center justify-between mb-2.5">
-        <h3 class="text-xs font-extrabold uppercase tracking-wider text-slate-500">1. Select Your Current Bottleneck</h3>
-        <span class="text-[11px] text-slate-400">Tailored Executive Micro-Prompts</span>
+        <h3 class="text-xs font-extrabold uppercase tracking-wider text-zinc-500">1. Select Your Current Bottleneck</h3>
+        <span class="text-[11px] text-zinc-400">Tailored Executive Micro-Prompts</span>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-        <button onclick="selectCategory('frozen')" id="cat-frozen" class="cat-btn bg-slate-900 text-white font-bold text-xs py-3 px-3 rounded-2xl border border-slate-900 shadow-sm transition text-left">
+        <button onclick="selectCategory('frozen')" id="cat-frozen" class="cat-btn bg-zinc-900 text-white font-bold text-xs py-3 px-3 rounded-2xl border border-zinc-900 shadow-sm transition text-left">
           🧊 Task Paralysis
           <span class="block text-[10px] font-normal opacity-75 mt-0.5">Stuck on where to start</span>
         </button>
-        <button onclick="selectCategory('clutter')" id="cat-clutter" class="cat-btn bg-white text-slate-700 hover:bg-slate-50 font-bold text-xs py-3 px-3 rounded-2xl border border-slate-200 transition text-left">
+        <button onclick="selectCategory('clutter')" id="cat-clutter" class="cat-btn bg-white text-zinc-700 hover:bg-zinc-50 font-bold text-xs py-3 px-3 rounded-2xl border border-zinc-200 transition text-left">
           🗂️ Visual Clutter
           <span class="block text-[10px] font-normal opacity-75 mt-0.5">Clear without organizing</span>
         </button>
-        <button onclick="selectCategory('admin')" id="cat-admin" class="cat-btn bg-white text-slate-700 hover:bg-slate-50 font-bold text-xs py-3 px-3 rounded-2xl border border-slate-200 transition text-left">
-          📬 Follow-Ups & Bills
+        <button onclick="selectCategory('admin')" id="cat-admin" class="cat-btn bg-white text-zinc-700 hover:bg-zinc-50 font-bold text-xs py-3 px-3 rounded-2xl border border-zinc-200 transition text-left">
+          📬 Follow-Ups
           <span class="block text-[10px] font-normal opacity-75 mt-0.5">Unblock pending replies</span>
         </button>
-        <button onclick="selectCategory('focus')" id="cat-focus" class="cat-btn bg-white text-slate-700 hover:bg-slate-50 font-bold text-xs py-3 px-3 rounded-2xl border border-slate-200 transition text-left">
+        <button onclick="selectCategory('focus')" id="cat-focus" class="cat-btn bg-white text-zinc-700 hover:bg-zinc-50 font-bold text-xs py-3 px-3 rounded-2xl border border-zinc-200 transition text-left">
           🚀 Deep Work Prep
           <span class="block text-[10px] font-normal opacity-75 mt-0.5">2-min launch runway</span>
         </button>
       </div>
     </section>
 
-    <section class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/90 mb-6 relative overflow-hidden">
+    <section class="bg-white rounded-3xl p-6 shadow-sm border border-zinc-200 mb-6 relative overflow-hidden">
       <div class="flex items-center justify-between gap-2 mb-3">
-        <span id="promptDurationBadge" class="text-[11px] font-bold bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full border border-indigo-200">
+        <span id="promptDurationBadge" class="text-[11px] font-bold bg-zinc-100 text-zinc-700 px-3 py-1 rounded-full border border-zinc-200">
           ⏱️ 2-Minute Executive Reset
         </span>
-        <button onclick="nextPrompt()" class="text-xs font-bold text-slate-500 hover:text-slate-900 flex items-center gap-1 transition">
+        <button onclick="nextPrompt()" class="text-xs font-bold text-zinc-500 hover:text-zinc-900 flex items-center gap-1 transition">
           <span>🔄 Swap Prompt</span>
         </button>
       </div>
 
-      <h3 id="promptTitle" class="text-xl font-extrabold text-slate-900 mb-2">
+      <h3 id="promptTitle" class="text-xl font-extrabold text-zinc-900 mb-2">
         Clear One Flat Surface (Do Not Organize)
       </h3>
-      <p id="promptAction" class="text-sm text-slate-600 leading-relaxed mb-4">
+      <p id="promptAction" class="text-sm text-zinc-600 leading-relaxed mb-4">
         Pick just the space immediately around your workspace. Move dishes to the sink, trash to the bin, and stack loose papers into a single pile. Do not sort the papers yet.
       </p>
 
-      <div class="bg-amber-50/70 border border-amber-200/80 rounded-2xl p-4 mb-5">
-        <p class="text-[11px] font-extrabold uppercase tracking-wider text-amber-900 mb-1">
+      <div class="bg-zinc-50 border border-zinc-200 rounded-2xl p-4 mb-5">
+        <p class="text-[11px] font-extrabold uppercase tracking-wider text-zinc-800 mb-1">
           🧠 The Executive Benefit
         </p>
-        <p id="promptWhy" class="text-xs text-amber-950/80 leading-relaxed font-medium">
+        <p id="promptWhy" class="text-xs text-zinc-600 leading-relaxed font-medium">
           The Upside: Wanna be a high achiever? Clear your space to clear your mind instantly. Make it easier to dive right into your best work with zero mental roadblocks.
         </p>
       </div>
 
       <div class="flex flex-col sm:flex-row items-center gap-3">
-        <button id="completePromptBtn" onclick="completeActivePrompt()" class="w-full sm:flex-1 bg-slate-900 hover:bg-slate-800 text-amber-300 font-bold py-3.5 px-5 rounded-xl shadow transition flex items-center justify-center gap-2 text-sm">
+        <button id="completePromptBtn" onclick="completeActivePrompt()" class="w-full sm:flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-5 rounded-xl shadow transition flex items-center justify-center gap-2 text-sm">
           <span>✅ Done! Claim +50 XP & Stop Guilt-Free</span>
         </button>
       </div>
     </section>
 
-    <footer class="mt-8 pt-5 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+    <footer class="mt-8 pt-5 border-t border-zinc-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-400">
       <div class="flex items-center gap-2">
-        <span class="font-serif-brand font-bold text-slate-700">Regina Caeli</span>
+        <span class="font-serif-brand font-bold text-zinc-700">Regina Caeli</span>
         <span>•</span>
         <span id="footerServiceSummary">Fixed-Scope Business Support • Anything outside scope is quoted separately</span>
       </div>
       <div class="flex items-center gap-3">
-        <span class="font-mono text-[11px] text-slate-400">Cloud Secured</span>
-        <button onclick="openAdminGenerator()" title="Leah Admin Link Builder" class="text-slate-300 hover:text-slate-600 transition">
+        <span class="font-mono text-[11px] text-zinc-400">Cloud Secured</span>
+        <button onclick="openAdminGenerator()" title="Leah Admin Link Builder" class="text-zinc-300 hover:text-zinc-600 transition">
           🔒
         </button>
       </div>
@@ -260,60 +262,61 @@
 
   </main>
 
-  <div id="adminModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-lg w-full p-6 shadow-2xl border border-slate-200 max-h-[92vh] overflow-y-auto">
+  <!-- ADMIN STUDIO (Matches new sleek aesthetic) -->
+  <div id="adminModal" class="fixed inset-0 z-50 hidden bg-zinc-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 shadow-2xl border border-zinc-200 max-h-[92vh] overflow-y-auto">
       <div class="flex items-center justify-between mb-4">
         <div>
-          <span class="text-[10px] font-extrabold uppercase tracking-widest bg-amber-100 text-amber-900 px-2 py-0.5 rounded">Leah Only • Admin Studio</span>
-          <h3 class="text-lg font-extrabold text-slate-900 mt-1">Client Cloud License Builder</h3>
+          <span class="text-[10px] font-extrabold uppercase tracking-widest bg-zinc-100 text-zinc-800 px-2 py-0.5 rounded">Leah Only • Admin Studio</span>
+          <h3 class="text-lg font-extrabold text-zinc-900 mt-1">Client Cloud License Builder</h3>
         </div>
-        <button onclick="closeAdminGenerator()" class="text-slate-400 hover:text-slate-700 text-lg font-bold">✕</button>
+        <button onclick="closeAdminGenerator()" class="text-zinc-400 hover:text-zinc-700 text-lg font-bold">✕</button>
       </div>
 
       <div class="space-y-3 text-xs">
         <div>
-          <label class="font-bold text-slate-700 block mb-1">Client or Business Name</label>
-          <input id="adminClientInput" type="text" placeholder="e.g., Malabar Bakes" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 text-slate-900 focus:outline-none focus:border-slate-900">
+          <label class="font-bold text-zinc-700 block mb-1">Client or Business Name</label>
+          <input id="adminClientInput" type="text" placeholder="e.g., Malabar Bakes" class="w-full border border-zinc-300 rounded-xl px-3 py-2.5 text-zinc-900 focus:outline-none focus:border-zinc-900">
         </div>
 
         <div>
           <div class="flex items-center justify-between mb-1">
-            <label class="font-bold text-slate-700">Unique Cloud Activation PIN</label>
-            <button type="button" onclick="rollRandomClientPin()" class="text-[11px] font-bold text-indigo-600 hover:text-indigo-800">
+            <label class="font-bold text-zinc-700">Unique Cloud Activation PIN</label>
+            <button type="button" onclick="rollRandomClientPin()" class="text-[11px] font-bold text-blue-600 hover:text-blue-800">
               🎲 Auto-Roll New PIN
             </button>
           </div>
-          <input id="adminPinInput" type="text" placeholder="e.g., RC-7492" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 font-mono font-bold uppercase text-slate-900 focus:outline-none focus:border-slate-900">
+          <input id="adminPinInput" type="text" placeholder="e.g., RC-7492" class="w-full border border-zinc-300 rounded-xl px-3 py-2.5 font-mono font-bold uppercase text-zinc-900 focus:outline-none focus:border-zinc-900">
         </div>
 
         <div>
-          <label class="font-bold text-slate-700 block mb-1">Top Banner Offer Mode (Kept Strictly Separate)</label>
-          <select id="adminOfferMode" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 text-slate-900 focus:outline-none focus:border-slate-900">
+          <label class="font-bold text-zinc-700 block mb-1">Top Banner Offer Mode (Kept Strictly Separate)</label>
+          <select id="adminOfferMode" class="w-full border border-zinc-300 rounded-xl px-3 py-2.5 text-zinc-900 focus:outline-none focus:border-zinc-900">
             <option value="booster">Role Boosters (Fewer missed follow-ups, no late payments, content going out)</option>
             <option value="signboard">SignBoard (Hosting included, free web address, social posts update)</option>
           </select>
         </div>
 
         <div>
-          <label class="font-bold text-slate-700 block mb-1">Destination Link (Top Banner Button)</label>
-          <input id="adminCtaInput" type="text" value="https://regcael.github.io/signboard/" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 text-slate-900 focus:outline-none focus:border-slate-900">
+          <label class="font-bold text-zinc-700 block mb-1">Destination Link (Top Banner Button)</label>
+          <input id="adminCtaInput" type="text" value="https://regcael.github.io/signboard/" class="w-full border border-zinc-300 rounded-xl px-3 py-2.5 text-zinc-900 focus:outline-none focus:border-zinc-900">
         </div>
 
-        <button onclick="buildClientUrl()" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 rounded-xl shadow mt-2">
+        <button onclick="buildClientUrl()" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 rounded-xl shadow mt-2 transition">
           ⚡ Register License in Cloud & Get Link
         </button>
 
-        <div id="generatedUrlBox" class="hidden bg-slate-50 border border-slate-200 rounded-xl p-3 mt-3 space-y-2">
+        <div id="generatedUrlBox" class="hidden bg-zinc-50 border border-zinc-200 rounded-xl p-3 mt-3 space-y-2">
           <div class="flex items-center justify-between">
-            <span class="text-[11px] font-bold text-emerald-700">Cloud PIN: <strong id="outputPinBadge" class="font-mono text-slate-900"></strong></span>
-            <span class="text-[10px] text-slate-400">Strict 1-Device Bound</span>
+            <span class="text-[11px] font-bold text-blue-700">Cloud PIN: <strong id="outputPinBadge" class="font-mono text-zinc-900"></strong></span>
+            <span class="text-[10px] text-zinc-500">Strict 1-Device Bound</span>
           </div>
-          <input id="generatedUrlOutput" readonly class="w-full bg-white border border-slate-200 rounded-lg px-2.5 py-2 font-mono text-[11px] text-slate-700">
+          <input id="generatedUrlOutput" readonly class="w-full bg-white border border-zinc-200 rounded-lg px-2.5 py-2 font-mono text-[11px] text-zinc-700">
           <div class="flex flex-wrap gap-2">
-            <button onclick="copyGeneratedUrl()" class="bg-slate-900 text-amber-300 font-bold px-3 py-1.5 rounded-lg text-[11px]">
+            <button onclick="copyGeneratedUrl()" class="bg-zinc-900 text-white font-bold px-3 py-1.5 rounded-lg text-[11px] hover:bg-zinc-800 transition">
               📋 Copy Link Only
             </button>
-            <button onclick="copyFullLicenseCard()" class="bg-emerald-700 text-white font-bold px-3 py-1.5 rounded-lg text-[11px]">
+            <button onclick="copyFullLicenseCard()" class="bg-white border border-zinc-300 text-zinc-900 font-bold px-3 py-1.5 rounded-lg text-[11px] hover:bg-zinc-50 transition">
               🎟️ Copy Link + Activation PIN
             </button>
           </div>
@@ -427,11 +430,11 @@
       const footerSummaryEl = document.getElementById('footerServiceSummary');
 
       if (offerMode === 'signboard') {
-        bannerCopyEl.innerHTML = `<span class="font-bold text-slate-950">Want a clean, professional digital space for your business without the headache?</span> <span class="font-medium text-slate-900 block md:inline"> I build beautiful SignBoards where your latest social posts update automatically. You get a free web address with hosting included! <span class="opacity-75 text-[11px] ml-1">(Want a custom domain instead? That's a quoted extra).</span></span>`;
+        bannerCopyEl.innerHTML = `<span class="font-bold text-white">Want a clean, professional digital space for your business without the headache?</span> <span class="font-medium text-zinc-300 block md:inline"> I build beautiful SignBoards where your latest social posts update automatically. You get a free web address with hosting included! <span class="opacity-75 text-[11px] ml-1">(Want a custom domain instead? That's a quoted extra).</span></span>`;
         ctaTextEl.textContent = '✨ View SignBoard Details';
         footerSummaryEl.textContent = 'Regina Caeli SignBoard • Hosting included • Custom domain is a quoted extra';
       } else {
-        bannerCopyEl.innerHTML = `<span class="font-bold text-slate-950">Hand over the busywork.</span> <span class="font-medium text-slate-900 block md:inline"> Feel the relief of having fewer missed follow-ups, no late payments, and content that keeps going out. <span class="opacity-75 text-[11px] ml-1">(Anything outside the fixed scope gets a polite separate quote).</span></span>`;
+        bannerCopyEl.innerHTML = `<span class="font-bold text-white">Hand over the busywork.</span> <span class="font-medium text-zinc-300 block md:inline"> Feel the relief of having fewer missed follow-ups, no late payments, and content that keeps going out. <span class="opacity-75 text-[11px] ml-1">(Anything outside the fixed scope gets a polite separate quote).</span></span>`;
         ctaTextEl.textContent = '✨ Explore Role Boosters • Fixed Scope';
         footerSummaryEl.textContent = 'Regina Caeli Role Boosters • Fixed scope • Out-of-scope work quoted separately';
       }
@@ -604,10 +607,10 @@
     function toggleBountySlot(idx) {
       bountyState[idx] = !bountyState[idx];
       const checkEl = document.getElementById('bountyCheck' + idx); const slotEl = document.getElementById('bountySlot' + idx);
-      if (bountyState[idx]) { checkEl.textContent = '✓'; checkEl.className = 'w-5 h-5 rounded-md bg-amber-400 text-slate-950 font-extrabold flex items-center justify-center text-xs'; slotEl.classList.add('border-amber-400/60', 'bg-white/20'); playChime(540 + idx * 70, 0.12); } else { checkEl.textContent = ''; checkEl.className = 'w-5 h-5 rounded-md border border-emerald-300 flex items-center justify-center text-xs'; slotEl.classList.remove('border-amber-400/60', 'bg-white/20'); }
+      if (bountyState[idx]) { checkEl.textContent = '✓'; checkEl.className = 'w-5 h-5 rounded-md bg-blue-600 text-white font-extrabold flex items-center justify-center text-xs'; slotEl.classList.add('border-blue-500/60', 'bg-zinc-700'); playChime(540 + idx * 70, 0.12); } else { checkEl.textContent = ''; checkEl.className = 'w-5 h-5 rounded-md border border-zinc-500 flex items-center justify-center text-xs'; slotEl.classList.remove('border-blue-500/60', 'bg-zinc-700'); }
       if (bountyState.every(Boolean)) {
         xp += 25; updateStatsUI(); playChime(784, 0.25); showSecurityToast('🎉 3-Item Bounty Complete! +25 XP earned.');
-        setTimeout(() => { bountyState = [false, false, false]; [0, 1, 2].forEach(i => { document.getElementById('bountyCheck' + i).textContent = ''; document.getElementById('bountyCheck' + i).className = 'w-5 h-5 rounded-md border border-emerald-300 flex items-center justify-center text-xs'; document.getElementById('bountySlot' + i).classList.remove('border-amber-400/60', 'bg-white/20'); }); }, 1200);
+        setTimeout(() => { bountyState = [false, false, false]; [0, 1, 2].forEach(i => { document.getElementById('bountyCheck' + i).textContent = ''; document.getElementById('bountyCheck' + i).className = 'w-5 h-5 rounded-md border border-zinc-500 flex items-center justify-center text-xs'; document.getElementById('bountySlot' + i).classList.remove('border-blue-500/60', 'bg-zinc-700'); }); }, 1200);
       }
     }
 
@@ -625,7 +628,7 @@
       currentCategory = cat; currentIndex = 0;
       ['frozen', 'clutter', 'admin', 'focus'].forEach(c => {
         const el = document.getElementById('cat-' + c);
-        if (c === cat) { el.className = 'cat-btn bg-slate-900 text-white font-bold text-xs py-3 px-3 rounded-2xl border border-slate-900 shadow-sm transition text-left'; } else { el.className = 'cat-btn bg-white text-slate-700 hover:bg-slate-50 font-bold text-xs py-3 px-3 rounded-2xl border border-slate-200 transition text-left'; }
+        if (c === cat) { el.className = 'cat-btn bg-zinc-900 text-white font-bold text-xs py-3 px-3 rounded-2xl border border-zinc-900 shadow-sm transition text-left'; } else { el.className = 'cat-btn bg-white text-zinc-700 hover:bg-zinc-50 font-bold text-xs py-3 px-3 rounded-2xl border border-zinc-200 transition text-left'; }
       });
       renderPrompt();
     }
